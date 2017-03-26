@@ -1,0 +1,92 @@
+@import 'common';
+
+body {
+    background-color: #f9f9f9;
+}
+
+nav {
+    @include height(88);
+    background-color: #393a3e;
+}
+
+nav .left {
+    float: left;
+    @include width(50);
+    height: 100%;
+    background-color: transparent;
+    background-image: url('../images/top_left_btn.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    @include background-size(20, 36)
+}
+
+nav .title{
+    @include width(550);
+    @include height(88);
+    @include line-height(88);
+    float: left;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+nav .right {
+    float: right;
+    @include width(38);
+    height: 100%;
+    background-color: transparent;
+    background-image: url('../images/top_right_btn.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    @include background-size(8, 36)
+}
+
+.video {
+    width: 100%;
+}
+
+.video img {
+    width: 100%;
+}
+
+.container{
+    background-color: #fff;
+    @include padding(0, 30);
+}
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+.content .title{
+    @include height(84);
+    @include line-height(84);
+    font-size: 32px;
+}
+
+.test_btn{
+    width: 100%;
+    border-top: #e8e8e8 solid 0.015625rem;
+}
+.test_btn img{
+    width: 100%;
+    @include margin(30, 0);
+}
+
+.recommend{
+    @include margin-top(20);
+}
+
+.slide-box{
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slide-item{
+    @include width(210);
+    @include height(380);
+    @include margin-right(60);
+}
+.slide-item img{
+    @include width(210);
+}
