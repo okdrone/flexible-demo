@@ -13,7 +13,8 @@ nav .left {
   background-image: url("../images/top_left_btn.png");
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 0.3125rem 0.5625rem; }
+  background-size: 0.3125rem 0.5625rem;
+  border: 0; }
 
 nav .title {
   width: 8.59375rem;
@@ -32,7 +33,8 @@ nav .right {
   background-image: url("../images/top_right_btn.png");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 0.125rem 0.5625rem; }
+  background-size: 0.125rem 0.5625rem;
+  border: 0; }
 
 .video {
   width: 100%; }
@@ -53,6 +55,61 @@ nav .right {
   line-height: 1.3125rem;
   font-size: 32px; }
 
+.content .desc {
+  height: 1.3125rem;
+  line-height: 1rem;
+  font-size: 32px;
+  color: #666;
+  display: none; }
+
+.content .title .btn {
+  width: 0.40625rem;
+  height: 0.1875rem;
+  background-color: transparent;
+  background-image: url("../images/slide_down_btn.png");
+  background-repeat: no-repeat;
+  float: right;
+  border: 0;
+  margin-top: 0.5625rem; }
+
+.content .title .btn.up {
+  background-position: 0rem -0.21875rem; }
+
+.content .title .btn.down {
+  background-position: 0rem 0rem; }
+
+.content.filter {
+  height: 1.64063rem;
+  padding: 0.3125rem 0rem;
+  font-size: 24px; }
+
+.content.filter .search_btn {
+  float: right;
+  width: 1.01563rem;
+  height: 0.70313rem;
+  background-image: url("../images/search_btn.png");
+  background-color: #f9f9f9;
+  background-repeat: no-repeat;
+  background-position: 0.3125rem 0.15625rem; }
+
+.content .dropdown {
+  font-size: 24px;
+  float: left; }
+
+.content .dropdown .btn {
+  width: 3.75rem;
+  height: 0.70313rem;
+  font-size: 24px;
+  background-color: #f9f9f9; }
+
+.content .dropdown .dropdown-menu {
+  width: 3.75rem;
+  font-size: 24px;
+  background-color: #f9f9f9; }
+
+.content .disease {
+  margin-left: 0.3125rem; }
+
 .test_btn {
   width: 100%;
   border-top: #e8e8e8 solid 0.015625rem; }
@@ -66,13 +123,107 @@ nav .right {
 
 .slide-box {
   display: -webkit-box;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch; }
+  overflow-x: scroll; }
 
 .slide-item {
   width: 3.28125rem;
-  height: 5.9375rem;
+  height: 3.28125rem;
   margin-right: 0.9375rem; }
+
+.slide-item .title {
+  font-size: 24px;
+  line-height: 0.5rem;
+  margin-top: 0.07813rem; }
+
+.slide-item .title a {
+  color: black; }
+
+.slide-item .img {
+  width: 3.28125rem;
+  height: 1.84375rem; }
+
+.slide-item .img .tag {
+  width: 0.9375rem;
+  height: 0.4375rem;
+  line-height: 0.3125rem;
+  margin-top: -0.4375rem;
+  position: relative;
+  background-image: url("../images/title_bg.png");
+  color: #f9f9f9;
+  padding: 0.07813rem 0.04688rem;
+  text-align: center;
+  font-size: 18px; }
+
+.slide-item.active .tag {
+  background-image: none;
+  background-color: #43aae4; }
+
+.slide-item.active .title a {
+  color: #43aae4; }
 
 .slide-item img {
   width: 3.28125rem; }
+
+.list-box {
+  width: 100%; }
+
+.list-box .line {
+  width: 100%;
+  height: 0.3125rem;
+  border-top-style: solid;
+  border-top-width: 0.015625rem;
+  border-top-color: #e8e8e8; }
+
+.list-item {
+  width: 100%;
+  height: 2.1875rem;
+  margin-right: 0.9375rem; }
+
+.list-item .title {
+  font-size: 24px;
+  width: 5.46875rem;
+  height: 1.25rem;
+  line-height: 0.5rem;
+  margin-left: 0.3125rem;
+  float: left; }
+
+.list-item .title a {
+  color: #333; }
+
+.list-item .img {
+  width: 3.28125rem;
+  height: 1.84375rem;
+  float: left; }
+
+.list-item .img img {
+  width: 3.28125rem; }
+
+.list-item .img .tag {
+  width: 0.9375rem;
+  height: 0.4375rem;
+  line-height: 0.3125rem;
+  margin-top: -0.4375rem;
+  position: relative;
+  background-image: url("../images/title_bg.png");
+  color: #f9f9f9;
+  padding: 0.07813rem 0.04688rem;
+  text-align: center;
+  font-size: 18px; }
+
+.list-item.active .tag {
+  background-image: none;
+  background-color: #43aae4; }
+
+.list-item.active .title a {
+  color: #43aae4; }
+
+.list-item img {
+  width: 3.28125rem; }
+
+.list-item .info {
+  width: 5.46875rem;
+  height: 0.46875rem;
+  line-height: 0.46875rem;
+  margin-left: 0.3125rem;
+  color: #666;
+  float: left; }
