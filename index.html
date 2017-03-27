@@ -4,24 +4,25 @@
 
 <head>
     <meta charset="utf-8" />
-    <script src="js/flexible.js" type="text/javascript"></script>
+    <script src="js/flexible.min.js" type="text/javascript"></script>
     <title>Test</title>
-    <script src="js/flexible_css.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
 </head>
 
 <body>
     <nav>
-        <div class="left"></div>
+        <button class="left"></button>
         <div class="title">视频</div>
-        <div class="right"></div>
+        <button class="right"></button>
     </nav>
     <div>
         <div class="video"><img src="./images/video_cover.png" /></div>
     </div>
     <div class="container">
         <div class="content">
-            <div class="title">国际肿瘤专家详谈肿瘤护理尝试</div>
+            <div class="title">国际肿瘤专家详谈肿瘤护理尝试<button class="btn up"></button></div>
+            <div class="desc">301医院，张主任，肿瘤科</div>
         </div>
     </div>
     <div class="container">
@@ -35,25 +36,39 @@
                 推荐列表
             </div>
             <div class="slide-box">
-                <div class="slide-item">
-                    <img src="./images/list_cover.png" />
-                    <div>国际肿瘤专家详谈肿瘤护理尝试</div>
+                <div class="slide-item active">
+                    <div class="img">
+                        <img src="./images/list_video_1.png" />
+                        <div class="tag">播放中</div>
+                    </div>
+                    <div class="title"><a href="#">国际肿瘤专家详谈肿瘤护理尝试</a></div>
                 </div>
                 <div class="slide-item">
-                    <img src="./images/list_cover.png" />
-                    <div>国际肿瘤专家详谈肿瘤护理尝试</div>
+                    <div class="img">
+                        <img src="./images/list_video_2.png" />
+                        <div class="tag">10:33</div>
+                    </div>
+                    <div class="title"><a href="#">国际肿瘤专家详谈肿瘤护理尝试</a></div>
                 </div>
                 <div class="slide-item">
-                    <img src="./images/list_cover.png" />
-                    <div>国际肿瘤专家详谈肿瘤护理尝试</div>
+                    <div class="img">
+                        <img src="./images/list_video_2.png" />
+                        <div class="tag">30:33</div>
+                    </div>
+                    <div class="title"><a href="#">国际肿瘤专家详谈肿瘤护理尝试</a></div>
                 </div>
                 <div class="slide-item">
-                    <img src="./images/list_cover.png" />
-                    <div>国际肿瘤专家详谈肿瘤护理尝试</div>
+                    <div class="img">
+                        <img src="./images/list_video_2.png" />
+                        <div class="tag">20:33</div>
+                    </div>
+                    <div class="title"><a href="#">国际肿瘤专家详谈肿瘤护理尝试</a></div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>

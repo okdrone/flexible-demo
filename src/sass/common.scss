@@ -29,8 +29,16 @@ $baseline: 64;// 640 / 10
     margin-right: ($px / $baseline) + rem;
 }
 
+@mixin margin-bottom($px) {
+    margin-bottom: ($px / $baseline) + rem;
+}
+
 @mixin padding($xpx, $ypx) {
     padding: ($xpx / $baseline) + rem ($ypx / $baseline) + rem;
+}
+
+@mixin background-position($xpx, $ypx) {
+    background-position: ($xpx / $baseline) + rem ($ypx / $baseline) + rem;
 }
 
 @mixin background-size($xpx, $ypx) {
