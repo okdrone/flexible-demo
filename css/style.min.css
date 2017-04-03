@@ -93,7 +93,15 @@ nav .right {
   background-position: 0.3125rem 0.15625rem; }
 
 .content .dropdown {
+  width: 3.75rem;
+  height: 0.70313rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  text-align-last: center;
   font-size: 24px;
+  border-color: #e8e8e8;
+  border-radius: 0.10938rem;
+  border-width: 0.01563rem;
   float: left; }
 
 .content .dropdown .btn {
