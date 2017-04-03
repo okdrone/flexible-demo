@@ -17,41 +17,34 @@
         <button class="right"></button>
     </nav>
     <div class="container">
-        <div class="content filter">
-            <div class="dropdown doctor">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="true">
-                    按医生
-                    <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
+        <div class="content">
+            <div id='filter-box' class="filter-box">
+                <ul>
+                    <li class="btn"  toggle-menu="ddm1">按医生</li>
+                    <li class="line"></li>
+                    <li class="btn"  toggle-menu="ddm2">按疾病</li>
+                </ul>
+                <button class="btn search_btn"></button>
             </div>
-            &nbsp;&nbsp;
-            <div class="dropdown disease">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="true">
-                    按疾病
-                    <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-            </div>
-
-            <button class="btn search_btn"></button>
         </div>
     </div>
+
+    <div id="ddm1" class="drop-menu">
+        <ul >
+            <li><span>刘医生</span></li>
+            <li><span>王主任</span></li>
+            <li><span>赵主任</span></li>
+        </ul>
+    </div>
     
+    <div id="ddm2" class="drop-menu">
+        <ul >
+            <li><span>A肿瘤</span></li>
+            <li><span>B肿瘤</span></li>
+            <li><span>C肿瘤</span></li>
+        </ul>
+    </div>
+
     <div class="container">
         <div class="content">
             <div class="list-box">
@@ -93,6 +86,24 @@
     </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script>
+        $('#filter-box').find('li').click(function(){
+            if($(this).hasClass('on')){
+                $('#filter-box').find('li').each(function(){
+                    $(this).removeClass('on');
+                    $('#' + $(this).attr('toggle-menu')).hide();
+                });
+            } else {
+                $('#filter-box').find('li').each(function(){
+                    $(this).removeClass('on');
+                    $('#' + $(this).attr('toggle-menu')).hide();
+                });
+                $(this).addClass('on');
+                var menu = $(this).attr('toggle-menu');
+                $('#' + menu).show();
+            }
+        });
+    </script>
 </body>
 
 </html>

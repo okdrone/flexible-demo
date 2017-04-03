@@ -52,3 +52,15 @@ $baseline: 64;// 640 / 10
 @mixin border-width($px) {
     border-width: ($px / $baseline) + rem;
 }
+
+@mixin border-top($px, $style,  $color) {
+    border-top: ($px / $baseline) + rem $style $color;
+}
+
+@mixin border-bottom($px, $style,  $color) {
+    border-bottom: ($px / $baseline) + rem $style $color;
+}
+
+@mixin top($px) {
+    top: ($px / $baseline) + rem;
+}
