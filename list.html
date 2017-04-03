@@ -87,21 +87,34 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script>
+        function clean_drop_menu(){
+            $('#filter-box').find('li').each(function(){
+                $(this).removeClass('on');
+                $('#' + $(this).attr('toggle-menu')).hide();
+            });
+        }
         $('#filter-box').find('li').click(function(){
             if($(this).hasClass('on')){
-                $('#filter-box').find('li').each(function(){
-                    $(this).removeClass('on');
-                    $('#' + $(this).attr('toggle-menu')).hide();
-                });
+                clean_drop_menu();
             } else {
-                $('#filter-box').find('li').each(function(){
-                    $(this).removeClass('on');
-                    $('#' + $(this).attr('toggle-menu')).hide();
-                });
+                clean_drop_menu();
                 $(this).addClass('on');
                 var menu = $(this).attr('toggle-menu');
                 $('#' + menu).show();
             }
+        });
+        $('.drop-menu').click(clean_drop_menu);
+        $('#ddm1').find('li').click(function(){
+            var val = $(this).find('span:eq(0)').html();
+            console.log(val);
+            $('#filter-box').find('li[toggle-menu="ddm1"]').html(val);
+            clean_drop_menu();
+        });
+        $('#ddm2').find('li').click(function(){
+            var val = $(this).find('span:eq(0)').html();
+            console.log(val);
+            $('#filter-box').find('li[toggle-menu="ddm2"]').html(val);
+            clean_drop_menu();
         });
     </script>
 </body>
