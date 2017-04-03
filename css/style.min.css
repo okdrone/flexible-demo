@@ -102,7 +102,8 @@ nav .right {
   border-color: #e8e8e8;
   border-radius: 0.10938rem;
   border-width: 0.01563rem;
-  float: left; }
+  float: left;
+  display: block; }
 
 .content .dropdown .btn {
   width: 3.75rem;

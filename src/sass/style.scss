@@ -117,6 +117,7 @@ nav .right {
     @include border-radius(7);
     @include border-width(1);
     float: left;
+    display: block;
 }
 
 .content .dropdown .btn {
